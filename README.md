@@ -1,2 +1,2 @@
-# Raspberry-Pi-configuratio-for-machine-learning-and-IoTn
+# Raspberry-Pi-configuratio-for-machine-learning-and-IoT
 This repository provides a guide to configuring a Raspberry Pi for machine learning and IoT projects. It includes steps to install TensorFlow, OpenCV, run machine learning algorithms, and boot from an SSD using a HAT. Ideal for both beginners and advanced users, this guide helps you set up and optimize your Raspberry Pi for various applications.
