@@ -158,14 +158,14 @@ The "Boards Manager" dialog will close.
 
 # Install btop++ on Raspberry Pi
 
-1 - wget -qO btop.tbz https://github.com/aristocratos/btop/releases/latest/download/btop-armv7l-linux-musleabihf.tbz
-2 - sudo tar xf btop.tbz --strip-components=2 -C /usr/local ./btop/bin/btop
-3 - rm -rf btop.tbz
+1. wget -qO btop.tbz https://github.com/aristocratos/btop/releases/latest/download/btop-armv7l-linux-musleabihf.tbz
+2. sudo tar xf btop.tbz --strip-components=2 -C /usr/local ./btop/bin/btop
+3. rm -rf btop.tbz
 
 
 # How to boot Raspberry Pi 5 from NVMe M.2 SSD
-1-	Site link - https://notenoughtech.com/raspberry-pi/boot-raspberry-pi-5-from-nvme/
-2-	Youtube link - https://youtu.be/MwrdwbYI_7M?si=Be4VI220Xiu5gnOW
+1. Site link - https://notenoughtech.com/raspberry-pi/boot-raspberry-pi-5-from-nvme/
+2. Youtube link - https://youtu.be/MwrdwbYI_7M?si=Be4VI220Xiu5gnOW
 
 
 # How to create banner in linux –
