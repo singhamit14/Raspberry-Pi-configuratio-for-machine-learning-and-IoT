@@ -2,14 +2,15 @@
 This repository provides a guide to configuring a Raspberry Pi for machine learning and IoT projects. It includes steps to install TensorFlow, OpenCV, run machine learning algorithms, and boot from an SSD using a HAT. Ideal for both beginners and advanced users, this guide helps you set up and optimize your Raspberry Pi for various applications.
 
 # Installing Arduino ide –
-•	First download the tar.zx file from site
-•	Go to download folder through terminal and run command ---- tar –xf  <downloaded file name>
-•	run ls command you see one new folder name with Arduino 
-•	go to that folder through cd 
-•	run command - sudo  ./install.sh
+1.	First download the tar.zx file from site
+2.	Go to download folder through terminal and run command ---- tar –xf  <downloaded file name>
+3. run ls command you see one new folder name with Arduino
+4. go to that folder through cd
+5. run command - sudo  ./install.sh
 
 
-# Setup of installing older version of python– we downgrade our python version because in new version of rasbien os  python 3.11 which does not support tensorflow on raspberry pi – so we shift to 3.10 version 
+# Setup of installing older version of python– 
+we downgrade our python version because in new version of rasbien os  python 3.11 which does not support tensorflow on raspberry pi – so we shift to 3.10 version 
 video link - https://youtu.be/vekblEk6UPc?si=Z9n4b2V_AP-ievJR
 STEPS –
 1.	Run the easy installer 
@@ -51,10 +52,10 @@ Run: 1.-wget [Raw file URL]
 2.-sudo chmod +x [Raw file URL] 
 3.-./[Tensorflow file] 
 4.-tensorflow python3 -m pip install tensorflow-[Your version here].whl
-5.      exec $SHELL
-6.     source env/bin/activate
-7.     pip install opencv-contrib-python (more libraries and customization)
-8.     pip install opencv-python 
+5. exec $SHELL
+6. source env/bin/activate
+7. pip install opencv-contrib-python (more libraries and customization)
+8. pip install opencv-python 
 
 Checking ---
 python import tensorflow as tf
@@ -93,34 +94,34 @@ Instructions for manually changing default directory
 To minimize the chance of permissions errors, you can configure npm to use a different directory. In this example, you will create and use hidden directory in your home directory.
 •	Back up your computer.
 •	On the command line, in your home directory, create a directory for global installations:
-$ curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
-$ sudo apt-get install -y nodejs
+1. $ curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+2. $ sudo apt-get install -y nodejs
 
 Check if the version is v20 or above
-$ node -v
-$ curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sh
+1. $ node -v
+2. $ curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sh
 
 If it returns that the directory is not on path, type
-npm config get prefix
+1. npm config get prefix
 
 Whatever output you get-add in place of home/dave/work
-export PATH=/home/dave/work:$PATH
+1. export PATH=/home/dave/work:$PATH
 The above script installs arduino cli
-$ npm config get prefix
+1. $ npm config get prefix
 
 This command should return usr/local or \usr. Now follow the below steps, to set it on path so you do not require administrative permisiions
-$ mkdir ~/.npm-global
+1. $ mkdir ~/.npm-global
 
 Configure npm to use the new directory path:
-$ npm config set prefix '~/.npm-global'
+1. $ npm config set prefix '~/.npm-global'
 In your preferred text editor, open or create a ~/.profile file and add this line:
-export PATH=~/.npm-global/bin:$PATH
+2. export PATH=~/.npm-global/bin:$PATH
 
 On the command line, update your system variables:
-$ source ~/.profile
+1. $ source ~/.profile
 
 Now install the cli:
-$ npm install -g edge-impulse-cli
+2. $ npm install -g edge-impulse-cli
 
 
 # Bossac error on arm64 for WIO terminal, SEEED SAMD Boards -----  
