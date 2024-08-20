@@ -78,9 +78,6 @@ tf.__version__ quit()
 2.	ollama run tinyllama
 for exit from ollama model – run
 1.	/bye
-Libraries which I installed –
-1.	pip install jupyter
-2.	
 
 # Installing torch and torchvision on raspberry pi-
 1.	sudo apt get install python3-pip
@@ -128,22 +125,22 @@ Now install the cli:
  
 1.		Click the following link to download a version of the Seeed package index file that has the modification I mentioned above:
 package_seeeduino_boards_aarch64_index.json (2.6 KB)
-2.	Wait for the download to finish.
-3.	Copy the downloaded file to the folder at the following path:
-4.	/home/<username>/.arduino15/
+2. Wait for the download to finish.
+3. Copy the downloaded file to the folder at the following path:
+4. /home/<username>/.arduino15/
 (Where <username> is your Linux username)
   The .arduino15 folder may be hidden by default in your file manager and terminal.
-5.	Start Arduino IDE if it is not already running.
-6.	Select File > Preferences from the Arduino IDE menus.
+5. Start Arduino IDE if it is not already running.
+6. Select File > Preferences from the Arduino IDE menus.
 The "Preferences" dialog will open.
-7.	Click the icon on the right side of the "Additional Boards Manager URLs" field of the dialog.
+7. Click the icon on the right side of the "Additional Boards Manager URLs" field of the dialog.
 The "Additional Boards Manager URLs" dialog will open.
-8.	Add the following URL on a new line of the field in the "Additional Boards Manager URLs" dialog:
-9.	file:///home/<username>/.arduino15/package_seeeduino_boards_aarch64_index.json
+8. Add the following URL on a new line of the field in the "Additional Boards Manager URLs" dialog:
+9. file:///home/<username>/.arduino15/package_seeeduino_boards_aarch64_index.json
   You must leave the standard Seeed Boards Manager URL 5 in the field in addition to the URLs you are adding, so don't overwrite it.
-10.	Replace the <username> in that URL with your Linux username.
-11.	Add the following URL on a new line of the field in the "Additional Boards Manager URLs" dialog:
-12.	https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
+10. Replace the <username> in that URL with your Linux username.
+11. Add the following URL on a new line of the field in the "Additional Boards Manager URLs" dialog:
+12. https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
  This URL must be added because it contains the information needed to install the replacement adafruit:bossac@1.8.0-48-gb176eee tool dependency.
 13.	Click the "OK" button.
 The "Additional Boards Manager URLs" dialog will close.
