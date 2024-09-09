@@ -63,25 +63,33 @@ tf.__version__ quit()
 
 # If above step of open cv is not working then do this –
 (This process take 2 hours)
-1.	sudo apt-get install libgtk2.0-dev pkg-config
-2.	pip uninstall opencv-python
-3.	git clone https://github.com/opencv/opencv.git
-4.	cd opencv
-5.	mkdir build
-6.	cd build 
-7.	cmake ..
-8.	make 
-9.	sudo make install
+```bash
+$ sudo apt-get install libgtk2.0-dev pkg-config
+$ pip uninstall opencv-python
+$ git clone https://github.com/opencv/opencv.git
+$ cd opencv
+$ mkdir build
+$ cd build 
+$ cmake ..
+$ make 
+$ sudo make install
+```
 
 # Installing LLM on raspberry pi –
-1.	Curl  -fsSLhttps://ollama.com/install.sh  |  sh
-2.	ollama run tinyllama
+```bash
+$ Curl  -fsSLhttps://ollama.com/install.sh  |  sh
+$ ollama run tinyllama
+```
 for exit from ollama model – run
-1.	/bye
+```bash
+$ /bye
+```
 
 # Installing torch and torchvision on raspberry pi-
-1.	sudo apt get install python3-pip
-2.	pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
+```bash
+$ sudo apt get install python3-pip
+$ pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
+```
 
 
 
@@ -91,34 +99,54 @@ Instructions for manually changing default directory
 To minimize the chance of permissions errors, you can configure npm to use a different directory. In this example, you will create and use hidden directory in your home directory.
 •	Back up your computer.
 •	On the command line, in your home directory, create a directory for global installations:
-1. $ curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
-2. $ sudo apt-get install -y nodejs
+```bash
+$ curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+$ sudo apt-get install -y nodejs
+```
 
 Check if the version is v20 or above
-1. $ node -v
-2. $ curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sh
+```bash
+$ node -v
+$ curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sh
+```
 
 If it returns that the directory is not on path, type
-1. npm config get prefix
+```bash
+npm config get prefix
+```
 
 Whatever output you get-add in place of home/dave/work
-1. export PATH=/home/dave/work:$PATH
+```bash
+export PATH=/home/dave/work:$PATH
+```
 The above script installs arduino cli
-1. $ npm config get prefix
+```bash
+$ npm config get prefix
+```
 
 This command should return usr/local or \usr. Now follow the below steps, to set it on path so you do not require administrative permisiions
-1. $ mkdir ~/.npm-global
+```bash
+$ mkdir ~/.npm-global
+```
 
 Configure npm to use the new directory path:
-1. $ npm config set prefix '~/.npm-global'
+```bash
+$ npm config set prefix '~/.npm-global'
+```
 In your preferred text editor, open or create a ~/.profile file and add this line:
-2. export PATH=~/.npm-global/bin:$PATH
+```bash
+export PATH=~/.npm-global/bin:$PATH
+```
 
 On the command line, update your system variables:
-1. $ source ~/.profile
+```bash
+$ source ~/.profile
+```
 
 Now install the cli:
-2. $ npm install -g edge-impulse-cli
+```bash
+$ npm install -g edge-impulse-cli
+```
 
 
 # Bossac error on arm64 for WIO terminal, SEEED SAMD Boards -----  
